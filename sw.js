@@ -1,4 +1,4 @@
-const CACHE='prepa-github-v1',CORE=['./','index.html','style.css','app.js','content.json','documents.json','manifest.webmanifest','icon-192.png','icon-512.png','assets.json'];
+const CACHE='prepa-github-v2',CORE=['./','index.html','style.css','app.js','content.json','documents.json','manifest.webmanifest','icon-192.png','icon-512.png','assets.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE))));
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 let downloading=null;
